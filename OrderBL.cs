@@ -55,6 +55,12 @@ namespace BusinessLayer
             return obj.ShowOrderDetails();
 
         }
+        public DataSet FetchOrderbyidBL(Order n)
+        {
+            OrderDAL obj = new OrderDAL();
+            return obj.ShowOrderDetailsbyid(n);
+
+        }
         //public DataSet FetchOrderDetailAndUpdateStatusBL()
         //{
         //    OrderDAL obj = new OrderDAL();

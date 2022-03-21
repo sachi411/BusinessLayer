@@ -75,19 +75,7 @@ namespace BusinessLayer
                 throw;
             }
         }
-        public int UpdateProductQuan_in_handBL(Product objBL,OrderLine obj)
-        {
-            try { 
-            
-                ProductDAL pro = new ProductDAL();
-                return pro.UpdateProductQuan_in_hand(objBL,obj);
-
-            }
-            catch
-            {
-                throw;
-            }
-        }
+        
         public DataSet FetchAllProductBL()
         {
             ProductDAL obj = new ProductDAL();
